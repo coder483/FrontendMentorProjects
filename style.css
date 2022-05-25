@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.container{  
+    width: 19vw;
+    min-width: 300px;
+    height: 65vh;
+    min-height: 520px;
+    border-radius:.5rem ;
+    background-color: hsl(216, 50%, 16%);
+}
+.wrapper-2{
+    margin: 0 20px  20px;
+
+}
+.main-image{
+    background:url('images/image-equilibrium.jpg');
+    background-repeat:no-repeat;
+     background-position: center center;
+    background-size: cover;
+    background-position: center center;
+    width: 17vw;
+    min-width: 270px;
+    display: inline-block;
+    height: 35vh;
+    min-height: 300px;
+    border-radius: .4rem;
+    margin: .8rem 1rem;
+    position: relative;
+}
+.main-image:hover::before{
+    background: url('images/icon-view.svg') no-repeat center;
+    background-size: cover;
+    content: '';
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+.main-image:hover:after{
+    background-color: hsl(178, 100%, 50%);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0.5;
+  border-radius: .4rem;
+  cursor: pointer;
+  display: block;
+}
+.user{
+    color: #fff;
+    padding-bottom: 15px;
+}
+.head-text{
+    color: hsl(215, 32%, 27%);
+    font-size: .9rem;
+    padding-bottom: 15px;
+}
+.price-img{
+background: url('images/icon-ethereum.svg') no-repeat center;
+width: 15px;
+height: 15px;
+}
+.day-img{
+    background: url('images/icon-clock.svg') no-repeat center;
+    width: 19px;
+    height: 19px;
+    background-size: cover;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+    font-size: .9rem;
+}
+.days-left{
+    color: hsl(215, 32%, 27%);
+    font-size: 1rem;
+}
+h1{
+    background-color: hsl(216, 50%, 16%);
+}
+.price-container{
+   padding-bottom: 20px;
+   justify-content: space-between;
+}
+.creater{
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 15px;
+}
+.creater-img{
+    background: url('images/image-avatar.png') no-repeat center;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.creater h4{
+    font-size: .9rem;
+    text-align: center;
+    padding-left: 10px;
+    color: hsl(215, 32%, 27%);
+}
+.creater h4 span:hover,.user:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.creater h4 span{
+    color: #fff;
+}
+.main-image:focus{
+    background-color: blue;
+}
